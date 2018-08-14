@@ -158,7 +158,7 @@ nav.navbar a.nav-link {
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
     border: none;
-  }
+  }f
 }
 
 nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
@@ -557,9 +557,57 @@ nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
 * =====================
 *
 */
+
+.educationandcontact {
+  text-align: center;
+}
 .customers-section img {
   padding: 10px;
   max-width: 80px;
+}
+
+.bg-education{
+  background-color: #e8cbbe; 
+}
+
+#edufilter {
+  text-align: center;
+  margin: 20px 0;
+  padding: 0;
+}
+
+#edufilter li {
+  display: inline-block;
+  list-style-type: none;
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 30px;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  margin: 0 10px 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#edufilter li a {
+  display: inline-block;
+  padding: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#edufilter li.active, #filter li:hover {
+  border: none;
+}
+
+#edufilter li.active a, #edufilter li:hover a {
+  color: #fff;
+  text-decoration: none;
+  background: #4fbfa8;
 }
 
 /*
@@ -615,8 +663,8 @@ footer.main-footer p.social a.facebook {
   background-color: #4460ae;
 }
 
-footer.main-footer p.social a.gplus {
-  background-color: #c21f25;
+footer.main-footer p.social a.linkedin {
+  background-color: #4875B4;
 }
 
 footer.main-footer p.social a.instagram {
@@ -626,6 +674,29 @@ footer.main-footer p.social a.instagram {
 footer.main-footer p.social a.email {
   background-color: #4a7f45;
 }
+
+
+footer.main-footer p.social a.wordpress {
+  background-color:  #21759b;
+}
+
+footer.main-footer p.social a.quora {
+  background-color: #a62100;
+}
+
+footer.main-footer p.social a.handshake {
+  background-color: #ffdb58;
+}
+
+footer.main-footer p.social a.github {
+  background-color: #211f1f;
+}
+
+footer.main-footer p.social a.vizualize {
+  background-color: #f442f4;
+}
+
+
 
 footer.main-footer p {
   margin: 0;

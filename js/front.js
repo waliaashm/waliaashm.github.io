@@ -11,6 +11,8 @@ $(function () {
      * counters
      *  =======================================*/
 
+    $('#detail').show();
+
     $('.counter').counterUp({
         delay: 10,
         time: 1000
@@ -67,7 +69,7 @@ $(function () {
     /* =========================================
      * google map
      *  =======================================*/
-    map();
+    // map();
 
 
     /* =========================================
@@ -97,8 +99,37 @@ $(function () {
 
         $('#filter li').removeClass('active');
         $(this).parent('li').addClass('active');
-
+         
         var categoryToFilter = $(this).attr('data-filter');
+        switch(categoryToFilter) {
+            case 'all':
+            $('.workExContent')[0].innerHTML = "I was given the opportunity to work with Siemens Healthineers as a developer. To start with, I was asked to work on an automation tool called ‘SR Mapping Analyzer Tool’, the basic functionality of which was to gather some data from the Server, analyze it and update an excel sheet using the data. The tool helps the product in being up to date with the latest image-measurements coming into the healthcare market and, hence, improve the customer experience.";
+            $('.workExContent1')[0].innerHTML = "After this first assignment, I worked on different components of the product from the User Interface to the Back End part of the code. With diligent and staunch effort, I was able to enhance the product quality with a paucity of defects raised on the code developed by me.";
+            break;
+
+            case 'webdesign':
+            $('.workExContent')[0].innerHTML = "I worked on a product that provides Cardiology Imaging an Reporting solutions to some of the leading hospitals around the world, including Cleveland Clinic and Massachusetts General Hospital in the United States of America. Exposure to such an inimitable product taught me different aspects of product development, delivery, maintenance etc.";
+            $('.workExContent1')[0].innerHTML = "";
+            break;
+
+            case 'seo':
+            $('.workExContent')[0].innerHTML = "C#, HTML, JavaScript, CSS, JQuery, Bootstrap";
+            $('.workExContent1')[0].innerHTML = "";
+            break;
+
+            case 'marketing':
+            $('.workExContent')[0].innerHTML = "MVC, WPF. Visual Studio was the IDE I used. Familiar with Team Foundation Server";
+            $('.workExContent1')[0].innerHTML = "";
+            break;
+
+            case 'other':
+            $('.workExContent')[0].innerHTML = "I got promoted from Associate Engineer to Engineer in July 2017";
+            $('.workExContent1')[0].innerHTML = "";
+            break;
+            default:
+
+        }
+
 
         $('.reference-item').each(function () {
 
@@ -110,6 +141,30 @@ $(function () {
         });
 
     });
+
+     $('#edufilter a').click(function (e) {
+        e.preventDefault();
+
+        $('#edufilter li').removeClass('active');
+        $(this).parent('li').addClass('active');
+         
+        var categoryToFilter = $(this).attr('data-filter');
+
+        switch(categoryToFilter) {
+            case 'BMS':
+            $('.educationContent')[0].innerHTML = "Minor: Information Science | Duration: 2011-2015 | CGPA: 8.64 (10 Point Scale ) | Location: Bangalore";
+            break;
+
+            case 'ASU':
+            $('.educationContent')[0].innerHTML = "Minor: Computer Science (Big Data Systems) | Duration: 2018-2020 | Location: Tempe";
+            break;
+
+            default:
+
+           }
+        });
+
+    
 
 
     /* =========================================
