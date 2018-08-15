@@ -152,11 +152,11 @@ $(function () {
 
         switch(categoryToFilter) {
             case 'BMS':
-            $('.educationContent')[0].innerHTML = "Minor: Information Science | Duration: 2011-2015 | CGPA: 8.64 (10 Point Scale ) | Location: Bangalore";
+            $('.educationContent')[0].innerHTML = "Minor: Information Science | Term: 2011-2015 | CGPA: 8.64 (10 Point Scale ) | Location: Bangalore";
             break;
 
             case 'ASU':
-            $('.educationContent')[0].innerHTML = "Minor: Computer Science (Big Data Systems) | Duration: 2018-2020 | Location: Tempe";
+            $('.educationContent')[0].innerHTML = "Major: Computer Science (Big Data Systems) | Term: 2018-2020 | CGPA: --- | Location: Tempe";
             break;
 
             default:
